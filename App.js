@@ -38,10 +38,10 @@ export default function App() {
       
             <View style={styles.buttonContainer}>
               <TouchableOpacity style={styles.button} onPress={() => checkNumber(true)}>
-                <Text style={styles.textContainer}>EVEN NUMBER</Text>
+                <Text style={styles.textContainer}>EVEN</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.button} onPress={() => checkNumber(false)}>
-                <Text style={styles.textContainer}>ODD NUMBER</Text>
+                <Text style={styles.textContainer}>ODD</Text>
               </TouchableOpacity>
             </View>
             {
