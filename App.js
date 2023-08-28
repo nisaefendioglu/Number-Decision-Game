@@ -31,29 +31,29 @@ export default function App() {
               <Image source={require("./assets/numbers.jpg")} />
             </View>
             <View>
-              <Text style={styles.textContainer}>TEK SAYI MI?</Text>
-              <Text style={styles.textContainer}>ÇİFT SAYI MI?</Text>
+              <Text style={styles.textContainer}>ODD NUMBER?</Text>
+              <Text style={styles.textContainer}>EVEN NUMBER?</Text>
               <Text style={styles.randomTextContainer}>{randomNumber}</Text>
             </View>
       
             <View style={styles.buttonContainer}>
               <TouchableOpacity style={styles.button} onPress={() => checkNumber(true)}>
-                <Text style={styles.textContainer}>ÇİFT SAYI</Text>
+                <Text style={styles.textContainer}>EVEN</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.button} onPress={() => checkNumber(false)}>
-                <Text style={styles.textContainer}>TEK SAYI</Text>
+                <Text style={styles.textContainer}>ODD</Text>
               </TouchableOpacity>
             </View>
             {
               userChoice !== null && (
                 <Text style={styles.result}>
-                  {userChoice ? 'Tebrikler!' : 'Tekrar Dene!'}
+                  {userChoice ? 'CONGRATULATIONS!' : 'TRY AGAIN!'}
                 </Text>
               )
             }
 
             <TouchableOpacity style={styles.button} onPress={generateRandomNumber}>
-              <Text style={styles.textContainer}>SAYI ÜRET</Text>
+              <Text style={styles.textContainer}>GENERATE NUMBER</Text>
             </TouchableOpacity>
           </>
         )
