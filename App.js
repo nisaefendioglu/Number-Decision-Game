@@ -30,7 +30,7 @@ export default function App() {
             <View style={styles.imageContainer}>
               <Image source={require("./assets/numbers.jpg")} />
             </View>
-            <View>
+            <View> 
               <Text style={styles.textContainer}>ODD NUMBER?</Text>
               <Text style={styles.textContainer}>EVEN NUMBER?</Text>
               <Text style={styles.randomTextContainer}>{randomNumber}</Text>
@@ -38,10 +38,10 @@ export default function App() {
       
             <View style={styles.buttonContainer}>
               <TouchableOpacity style={styles.button} onPress={() => checkNumber(true)}>
-                <Text style={styles.textContainer}>EVEN</Text>
+                <Text style={styles.textContainer}>EVEN NUMBER</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.button} onPress={() => checkNumber(false)}>
-                <Text style={styles.textContainer}>ODD</Text>
+                <Text style={styles.textContainer}>ODD NUMBER</Text>
               </TouchableOpacity>
             </View>
             {
@@ -77,13 +77,15 @@ const styles = StyleSheet.create({
     fontSize:20,
     color: 'purple',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop:5
   },
   randomTextContainer:{
     fontSize:30,
     color: 'red',
     textAlign: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop:10
   },
   buttonContainer: {
     flexDirection: 'row'
